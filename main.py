@@ -26,7 +26,7 @@ class Runner:
         for detail in self.details:
             executor = GreythrWorkTimeLogExecutor(detail, ChromeDriver(headless=self.headless))
             executor.start()
-            time.sleep(15.0)
+            time.sleep(5.0)
 
 
 if __name__ == '__main__':
