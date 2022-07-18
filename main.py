@@ -33,7 +33,6 @@ if __name__ == '__main__':
     config()
     logging.info("**************** MAIN START ****************")
     runner = Runner(headless=True)
-    runner.addDetail(Details("tb0018", "pr@jyot123"))
     runner.addDetail(Details("tb0097", "Techbulls@291295"))
     t = multiprocessing.Process(target=runner.run)
     t.start()
